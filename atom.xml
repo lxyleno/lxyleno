@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-06T09:43:44.805Z</updated>
+  <updated>2019-02-28T10:56:59.358Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向过程与面向对象</title>
+    <link href="http://yoursite.com/2019/02/28/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://yoursite.com/2019/02/28/面向过程与面向对象/</id>
+    <published>2019-02-28T09:55:07.000Z</published>
+    <updated>2019-02-28T10:56:59.358Z</updated>
+    
+    <content type="html"><![CDATA[<p>学习编程已经接近半年，最近发现对某些基础思想不甚了解。<br>以下简述面向过程编程思想与面向对象编程思想的区别。并进行简单举例。</p><h4 id="面向过程-Procedure-Oriented"><a href="#面向过程-Procedure-Oriented" class="headerlink" title="面向过程(Procedure Oriented)"></a>面向过程(Procedure Oriented)</h4><p><strong>面向过程</strong>是一种以过程为中心的编程思想。<br>这些都是以什么正在发生为主要目标进行编程，不同于面向对象的是谁在受影响。<br>即将编程当成是做一件事，要按步骤完成，每一步就是一个过程。</p><h4 id="面向对象-Object-Oriented-OO"><a href="#面向对象-Object-Oriented-OO" class="headerlink" title="面向对象(Object Oriented,OO)"></a>面向对象(Object Oriented,OO)</h4><p><strong>面向对象</strong>是利用面向对象的信息建模概念，如实体、关系、属性等。同时运用封装、继承、多态等机制来构造<br>模拟现实系统的方法。使用封装好了的一面向过程操作，直接调用，简化自己。面向对象是基于面向过程的。<br>面向对象的选择性更大，重视的是结果而不是过程。</p><p><strong>宏观上，用面向对象来把握事物间复杂的关系，分析系统。微观上，仍然使用面向过程。</strong></p><h4 id="简单举例"><a href="#简单举例" class="headerlink" title="简单举例"></a>简单举例</h4><p>举个简单的现实例子<br>    将大象装进冰箱：<br><strong>面向过程做法：</strong></p><p>　　打开冰箱门</p><p>　　大象进去</p><p>　　关上冰箱门</p><p>代码实现：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class ElephantToRefrigerator&#123;</span><br><span class="line">  public static void main(String[] args)&#123;</span><br><span class="line">          open();</span><br><span class="line">          void();</span><br><span class="line">          out();</span><br><span class="line">    &#125;   </span><br><span class="line">    public static void open()&#123;</span><br><span class="line">       //打开冰箱门   </span><br><span class="line">    &#125;    </span><br><span class="line">    public static void in()&#123;</span><br><span class="line">       //大象进去</span><br><span class="line">    &#125;   </span><br><span class="line">    public static void out()&#123;</span><br><span class="line">      //关上冰箱门</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><strong>面向对象做法：</strong><br>思路：<br>　　A.需要哪些类<br>　　B.每个类要做什么<br>　　C.类和类的关系</p><p>把大象装进冰箱的分析。（如何分析：UML类图-名词提取法）</p><p>大象类：　　　　　　　　冰箱类：　　　　　　　Demo类：<br>属性：略　　　　　　　　属性： 略　　　　　　　main方法<br>方法：进入　　　　　　　方法：关闭<br>　　　　　　　　　　　　　　　打开<br>类与类的关系：<br>Demo中调用大象和冰箱的功能</p><p>代码实现：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">Class Elephant&#123;</span><br><span class="line">    public void in()&#123;</span><br><span class="line">     //进入</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br><span class="line">Class Refrigerator&#123;</span><br><span class="line">    public void open()&#123;</span><br><span class="line">    //打开</span><br><span class="line">    &#125;</span><br><span class="line">    public  void close()&#123;</span><br><span class="line">    //关闭</span><br><span class="line">   &#125;   </span><br><span class="line">&#125;</span><br><span class="line">Class Demo&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">         Elephant dx=new Elephant();</span><br><span class="line">         Refrigerator bx=new Refrigerator();</span><br><span class="line">         bx.open();</span><br><span class="line">         dx.in();</span><br><span class="line">         bx.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>再比如：<br>用面向过程的方法写出来的程序是一份蛋炒饭，而用面向对象写出来的程序是一份盖浇饭。<br>所谓盖浇饭，就是在米饭上面浇上一份盖菜，你喜欢什么菜，你就浇上什么菜。<br>蛋炒饭制作的细节，我不太清楚，但最后的一道工序肯定是把米饭和鸡蛋混在一起炒匀。<br>盖浇饭呢，则是把米饭和盖菜分别做好，你如果要一份红烧肉盖饭呢，就给你浇一份红烧肉<br>如果要一份青椒土豆盖浇饭，就给浇一份青椒土豆丝。</p><p>蛋炒饭的好处就是入味均匀。如果恰巧你不爱吃鸡蛋，只爱吃青菜的话，那么唯一的办法就是全部倒掉。<br>重新做一份青菜炒饭。盖浇饭就没这么多麻烦，你只需要把上面的盖菜拨掉，更换一份盖菜就可以了。<br>盖浇饭的缺点是入味不均，可能没有蛋炒饭那么香。</p><p>盖浇饭的好处就是菜、饭分离，从而提高了制作盖浇饭的灵活性。<br>用软件工程的专业术语就是可维护性比较好，饭和菜的耦合度低。<br>蛋炒饭将蛋、饭搅和在一起，想换蛋、饭中任何一种都很困难，耦合度很高，所以可维护性比较差。<br>软件工程追求的目标之一就是可维护性。可维护性主要表现在3个方面：可理解性、可测试性和可修改性。<br>面向对象的好处之一就是显著的改善了软件系统的可维护性。</p><p>总的来说：<br>向对象是将事物高度抽象化。<br>面向过程是一种自顶向下的编程<br>面向对象则必须先建立抽象模型后直接使用模型。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;学习编程已经接近半年，最近发现对某些基础思想不甚了解。&lt;br&gt;以下简述面向过程编程思想与面向对象编程思想的区别。并进行简单举例。&lt;/p&gt;
+&lt;h4 id=&quot;面向过程-Procedure-Oriented&quot;&gt;&lt;a href=&quot;#面向过程-Procedure-Oriented&quot; 
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="-编程思想" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Tomorrow</title>
@@ -100,7 +126,7 @@
     <link href="http://yoursite.com/2019/02/01/hello-world/"/>
     <id>http://yoursite.com/2019/02/01/hello-world/</id>
     <published>2019-02-01T05:20:34.373Z</published>
-    <updated>2019-02-12T04:41:38.965Z</updated>
+    <updated>2019-02-12T13:47:23.252Z</updated>
     
     <content type="html"><![CDATA[<blockquote><h2 id="关于建站"><a href="#关于建站" class="headerlink" title="关于建站"></a>关于建站</h2></blockquote><p>今天是2019年2月的第一天。<br>刚刚完成了参加的java训练营年前的最后一个小组项目。<br>由于高中同学同学都不在身边，大学同学又没有生活在就近的。<br>于是也只能每日追追番，看看电影，打打游戏，过得甚是无趣。</p><p>直到前天大学同学Muscle发了一条说说<br>说自己建了一个博客。<br>我点进一看，觉得颇有意思。<br>于是我便来了兴致。<br>各种论坛上，搜索着如何自己建立博客。</p><p>经过两天多的努力，到如今，终于是有了个雏形。虽然说看起来也还凑合，<br>但我知道，这只是套用了简单的模板并加以修改后的成果。而相比之下，<br>Muscle则是自学了JavaScript，从零开始，从后端到前端一步步建立。<br>我敬佩他那份以学习为乐的心。</p><p>不过，这两天的建站经历着实给我增添了不少乐趣。能把所学习到的东西，<br>马上运用到开发上，进而得出自己所想要的成果。<br>或许，这就是编程的魅力所在。</p><blockquote><h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2></blockquote><p>本人(现在)是软件工程的一名大二生。<br>喜欢猫，但也不讨厌狗<br>偏爱咖啡，但也不拒绝茶<br>喜欢五月天、周杰伦、林俊杰、陈奕迅<br>喜欢梦幻而神秘的紫色(相信你也猜得出来)<br>我给自己的定位一直是个平凡的人<br>平凡的家庭<br>平凡的样貌<br>平凡的性格<br>或许以后还会有一份平凡的工作</p><p>但这正是我想要的<br>我从高中<br>也可能是是更早之前<br>就有这样一个理想<br>未来的我<br>会有平凡的生活<br>有一位长相普通爱我至深的妻子<br>有一群久而不见亦不陌生的兄弟<br>有一个生活富余幸福美满的家庭<br>我不必为了生活而愁眉苦脸<br>也不会为了金钱而勾心斗角<br>如此简单快乐的生活<br>也是我现在所努力的目标</p><blockquote><h2 id="BY-THE-WAY"><a href="#BY-THE-WAY" class="headerlink" title="BY THE WAY"></a>BY THE WAY</h2></blockquote><p>如果你偶然间看到了本站，并希望与我更多交流的话<br>欢迎联系我哦 (&gt;3&lt;) 啾咪！</p><blockquote><p>邮箱：<a href="mailto:3203536836@qq.com" target="_blank" rel="noopener">3203536836@qq.com</a></p></blockquote>]]></content>
     
