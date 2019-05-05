@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-15T15:31:47.226Z</updated>
+  <updated>2019-05-05T08:16:11.018Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SHANGHAI</title>
+    <link href="http://yoursite.com/2019/05/05/SHANGHAI/"/>
+    <id>http://yoursite.com/2019/05/05/SHANGHAI/</id>
+    <published>2019-05-05T08:16:10.000Z</published>
+    <updated>2019-05-05T08:16:11.018Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>记 HIGHER BROTHER 2019巡演武汉站</title>
@@ -118,33 +132,6 @@
     
     
       <category term="-年度总结" scheme="http://yoursite.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日常集图</title>
-    <link href="http://yoursite.com/2019/02/02/%E6%97%A5%E5%B8%B8%E9%9B%86%E5%9B%BE/"/>
-    <id>http://yoursite.com/2019/02/02/日常集图/</id>
-    <published>2019-02-02T05:22:58.000Z</published>
-    <updated>2019-02-28T11:02:01.468Z</updated>
-    
-    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"><br><img src="https://s2.ax1x.com/2019/02/02/k81Jw4.jpg"></p><hr><p><img src="https://s2.ax1x.com/2019/02/02/k81Nk9.jpg"></p><hr><p><img src="https://s2.ax1x.com/2019/02/02/k81af1.jpg"></p><hr><p><img src="https://s2.ax1x.com/2019/02/02/k81wSx.jpg"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/02/02/k81Jw4.jpg&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.ax
-      
-    
-    </summary>
-    
-      <category term="美图" scheme="http://yoursite.com/categories/%E7%BE%8E%E5%9B%BE/"/>
-    
-    
-      <category term="-图片" scheme="http://yoursite.com/tags/%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
